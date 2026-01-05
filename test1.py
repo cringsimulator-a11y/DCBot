@@ -7,6 +7,10 @@ import os
 
 # ===================== CONFIG =====================
 TOKEN = os.getenv("DISCORD_TOKEN")
+
+if TOKEN is None:
+    raise RuntimeError("DISCORD_TOKEN is not set")
+    
 PREFIX = "!"
 DATABASE = "tntlauncher.db"
 # ==================================================
@@ -131,4 +135,5 @@ Optional expansions:
 
 
 # bot.run("MTQ1NzMxMTE1Njc0OTMzNjgxMQ.GaJFAa.rTOzF3CLYHJjCZ1nKcMjTTuENsFEZWGvrj8NLY")
+
 
