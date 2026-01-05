@@ -3,9 +3,10 @@ from discord.ext import commands, tasks
 import sqlite3
 import random
 import asyncio
+import os
 
 # ===================== CONFIG =====================
-TOKEN = "MTQ1NzMxMTE1Njc0OTMzNjgxMQ.GaJFAa.rTOzF3CLYHJjCZ1nKcMjTTuENsFEZWGvrj8NLY"  # <-- replace with your bot token
+TOKEN = os.getenv("DISCORD_TOKEN")
 PREFIX = "!"
 DATABASE = "tntlauncher.db"
 # ==================================================
@@ -130,3 +131,4 @@ Optional expansions:
 
 
 # bot.run("MTQ1NzMxMTE1Njc0OTMzNjgxMQ.GaJFAa.rTOzF3CLYHJjCZ1nKcMjTTuENsFEZWGvrj8NLY")
+
